@@ -1,8 +1,7 @@
 const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function removeFirstTwo(list) {
-    const [a, b, ...rest] = list;
-    const array2 = rest.slice();
+    const [,, ...array2] = list;
     return array2;
 }
 
