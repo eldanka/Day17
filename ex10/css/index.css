@@ -1,0 +1,135 @@
+#left {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#right {
+    position: relative;
+    flex: 6;
+    display: block;
+}
+body {
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    margin: 0;
+    background-color: #0d0f12;
+    color: hsla(0,0%,100%,.95);
+}
+div {
+    display: block;
+}
+footer {
+    display: contents;
+    text-decoration: none;
+}#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+#showcase {
+    background-image: url(https://image.ibb.co/cO9Lxq/login-bg.jpghttps://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png);
+    background-color: black;
+    background-position: right center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+#showcase-content {
+    width: 100%;
+    z-index: 0;
+}
+.showcase-text {
+    display: inherit;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 100%;
+    color: hsla(0,0%,100%,.95);
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+#signin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+.logo {
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo img {
+    width: 303px;
+    max-width: 80%;
+    border-style: none;
+    position: fixed;
+    top: 7vw;
+}
+.secondary-btn {
+    margin-bottom: 0px;
+    padding: 10px 80px;
+    min-width: unset;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s all;
+    border-radius: 2px;
+    background: gray;
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-input {
+    width: 100%;
+    background-color: black;
+    height: 2vw;
+    margin-bottom: 1vw;
+}
+.primary-btn {
+    background-color: rgb(15, 121, 253);
+    color: white;
+    width: 100%;
+    border: 0vw;
+    height: 2vw;
+}
+form{
+    position: relative;
+    margin-bottom: 80px;
+}
+#links {
+    display: contents;
+    text-decoration: none !important;
+    margin-bottom: 30px;
+}
+#links a{
+    text-decoration: auto;
+    color: rgb(15, 121, 253);
+    padding: 1px;
+}
+.hr-br {
+    width: 70%;
+}
+footer div{
+    text-decoration: none;
+    display: flex;
+    justify-content: stretch;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
