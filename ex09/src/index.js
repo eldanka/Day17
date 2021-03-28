@@ -20,7 +20,7 @@ var users = [
         id: 3,
         fistName: "Jim",
         lastName: "Carrey",
-        age: 40,
+        age: 54,
         gender: "male"
     },
     {
@@ -43,16 +43,23 @@ function getUsers() {
 
 function findUserById(id) {
     try {
-        var user = _.find(users,id);
-        var iFindUserById = `${id} - ${fistName} ${lastName} is ${age}, ${gender}\n`;
-        console.log(user);
+        var user = _.find(users, {id});
+        var iFindUser = `${user.id} - ${user.fistName} ${user.lastName} is ${user.age}, ${user.gender}\n`;
+        console.log(iFindUser);
+        return iFindUser;
+        
     } catch (error) {
-        console.log("Cannot read property '/id'/");
+        console.log("Cannot read property 'id'");
+        return "Cannot read property 'id'";
     }
     
 }
 
 getUsers();
 findUserById(1);
+findUserById(2);
+findUserById(3);
+findUserById(4);
+findUserById(0);
 
 module.exports = findUserById;
