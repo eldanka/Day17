@@ -16,7 +16,7 @@ var users = [
     {
         fistName: "Jim",
         lastName: "Carrey",
-        age: 40,
+        age: 54,
         gender: "male"
     },
     {
@@ -38,17 +38,20 @@ function getUsers() {
 
 function findUser(lastName, gender) {
     try {
-        var user = _.find(users,(lastName, gender) => {
-            var iFindUser = `${fistName} ${lastName} is ${age}, ${gender}\n`;
-            console.log(iFindUser);
-            return iFindUser;
-        });
+        var user = _.find(users, { lastName, gender});
+        var iFindUser = `${user.fistName} ${user.lastName} is ${user.age}, ${user.gender}\n`;
+        console.log(iFindUser);
+        return iFindUser;
     } catch (error) {
-        console.log("Cannot read property '/fistName'/ of undefined");
+        console.log("Cannot read property 'fistName' of undefined");
+        return "Cannot read property '/fistName'/ of undefined";
     }
 }
 
 getUsers();
 findUser("Doe", "male");
+findUser("Doe", "female");
+findUser("Carrey", "male");
+findUser("Winslet", "female");
 
 module.exports = findUser;
